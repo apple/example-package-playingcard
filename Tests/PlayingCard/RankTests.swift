@@ -13,7 +13,7 @@ import XCTest
 
 class RankTests: XCTestCase {
     
-    func testRankStringEquality(){
+    func testRankStringEquality() {
         let numbers = [2,3,4,5,6,7,8,9,10]
         let suits = numbers.map{Rank(rawValue:$0)}.flatMap{$0}.map{Int(String($0)) ?? 0}
         
@@ -24,7 +24,7 @@ class RankTests: XCTestCase {
         XCTAssertEqual(numbers, suits)
     }
     
-    func testRankComparable(){
+    func testRankComparable() {
         XCTAssertGreaterThan(Rank.ace, Rank.two)
         XCTAssertGreaterThan(Rank.ace, Rank.king)
         XCTAssertGreaterThan(Rank.king, Rank.queen)

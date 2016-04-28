@@ -8,7 +8,7 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-extension CardTests{
+extension CardTests {
     
     static var allTests : [(String, CardTests -> () throws -> Void)] {
         return [
@@ -18,7 +18,7 @@ extension CardTests{
     }
 }
 
-extension RankTests{
+extension RankTests {
 
     static var allTests : [(String, RankTests -> () throws -> Void)] {
         return [
@@ -28,7 +28,7 @@ extension RankTests{
     }
 }
 
-extension SuitTests{
+extension SuitTests {
     
     static var allTests : [(String, SuitTests -> () throws -> Void)] {
         return [

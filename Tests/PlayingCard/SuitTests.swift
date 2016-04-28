@@ -13,19 +13,14 @@ import XCTest
 
 class SuitTests: XCTestCase {
     
-    func testSuitStringEquality(){
-        let c:Suit = .clubs
-        let d:Suit = .diamonds
-        let h:Suit = .hearts
-        let s:Suit = .spades
-        
-        XCTAssertEqual(String(s), "♠︎")
-        XCTAssertEqual(String(h), "♡")
-        XCTAssertEqual(String(d), "♢")
-        XCTAssertEqual(String(c), "♣︎")
+    func testSuitStringEquality() {
+        XCTAssertEqual(String(Suit.spades), "♠︎")
+        XCTAssertEqual(String(Suit.hearts), "♡")
+        XCTAssertEqual(String(Suit.diamonds), "♢")
+        XCTAssertEqual(String(Suit.clubs), "♣︎")
     }
     
-    func testSuitComparable(){
+    func testSuitComparable() {
         XCTAssertGreaterThan(Suit.spades, Suit.diamonds)
         XCTAssertGreaterThan(Suit.hearts, Suit.diamonds )
         XCTAssertGreaterThan(Suit.hearts, Suit.clubs)

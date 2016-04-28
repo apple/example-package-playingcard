@@ -31,13 +31,13 @@ public func ==(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
 extension PlayingCard: Comparable {}
 
 public func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
-    return lhs.rank == rhs.rank ? lhs.suit == rhs.suit : lhs.rank < rhs.rank
+    return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
 }
 
 // MARK: - CustomStringConvertible
 
 extension PlayingCard : CustomStringConvertible {
     public var description: String {
-        return "\(rank)\(suit)"
+        return "\(suit)\(rank)"
     }
 }
