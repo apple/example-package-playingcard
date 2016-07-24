@@ -12,7 +12,7 @@
 
 import XCTest
 
-XCTMain([testCase(CardTest.allTest),
-         testCase(RankTest.allTest),
-         testCase(SuitTest.allTest)
+XCTMain([testCase(CardTests.allTests),
+         testCase(RankTests.allTests),
+         testCase(SuitTests.allTests)
         ])
