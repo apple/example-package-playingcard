@@ -10,30 +10,24 @@
 
 extension CardTests {
     
-    static var allTests : [(String, CardTests -> () throws -> Void)] {
-        return [
-                   ("testCardSingle", testCardSingle),
-                   ("testCardStringEquality",testCardStringEquality)
-        ]
-    }
+    static var allTests = [
+        ("testCardSingle", testCardSingle),
+        ("testCardStringEquality", testCardStringEquality)
+    ]
 }
 
 extension RankTests {
 
-    static var allTests : [(String, RankTests -> () throws -> Void)] {
-        return [
-                   ("testRankStringEquality",testRankStringEquality),
-                   ("testRankComparable", testRankComparable)
-        ]
-    }
+    static var allTests = [
+        ("testRankStringEquality", testRankStringEquality),
+        ("testRankComparable", testRankComparable),
+    ]
 }
 
 extension SuitTests {
     
-    static var allTests : [(String, SuitTests -> () throws -> Void)] {
-        return [
-                   ("testSuitStringEquality",testSuitStringEquality),
-                   ("testSuitComparable",testSuitComparable )
-        ]
-    }
+    static var allTests = [
+        ("testSuitStringEquality", testSuitStringEquality),
+        ("testSuitComparable", testSuitComparable),
+    ]
 }
