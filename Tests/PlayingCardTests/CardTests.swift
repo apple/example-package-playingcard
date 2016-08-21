@@ -31,9 +31,9 @@ class CardTests: XCTestCase {
         let card2 = PlayingCard(rank: .two, suit: .hearts)
         let card3 = PlayingCard(rank: .queen, suit: .diamonds)
         
-        XCTAssertEqual(String(card1), "♣︎J")
-        XCTAssertEqual(String(card2), "♡2")
-        XCTAssertEqual(String(card3), "♢Q")
+        XCTAssertEqual(String(describing: card1), "♣︎J")
+        XCTAssertEqual(String(describing: card2), "♡2")
+        XCTAssertEqual(String(describing: card3), "♢Q")
     }
     
 }
