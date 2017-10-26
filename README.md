@@ -2,8 +2,7 @@ This example package will be cloned and built as a dependency if you build the `
 
     git clone https://github.com/apple/example-package-dealer.git
     cd example-package-dealer
-    swift build
-    .build/debug/Dealer
+    swift run Dealer
 
 # License
 
