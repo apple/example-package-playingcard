@@ -8,26 +8,14 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-extension CardTests {
-    
-    static var allTests = [
-        ("testCardSingle", testCardSingle),
-        ("testCardStringEquality", testCardStringEquality)
+import XCTest
+
+#if !os(macOS)
+public func allTests() -> [XCTestCaseEntry] {
+    return [
+        testCase(CardTests.allTests),
+        testCase(RankTests.allTests),
+        testCase(SuitTests.allTests),
     ]
 }
-
-extension RankTests {
-
-    static var allTests = [
-        ("testRankStringEquality", testRankStringEquality),
-        ("testRankComparable", testRankComparable),
-    ]
-}
-
-extension SuitTests {
-    
-    static var allTests = [
-        ("testSuitStringEquality", testSuitStringEquality),
-        ("testSuitComparable", testSuitComparable),
-    ]
-}
+#endif

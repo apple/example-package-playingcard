@@ -8,11 +8,11 @@
  See http://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
  */
 
-@testable import PlayingCardTestSuite
 
 import XCTest
 
-XCTMain([testCase(CardTests.allTests),
-         testCase(RankTests.allTests),
-         testCase(SuitTests.allTests)
-        ])
+import PlayingCardTests
+
+var tests = [XCTestCaseEntry]()
+tests += PlayingCardTests.allTests()
+XCTMain(tests)

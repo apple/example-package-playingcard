@@ -36,4 +36,8 @@ class CardTests: XCTestCase {
         XCTAssertEqual(String(describing: card3), "♢Q")
     }
     
+    static var allTests = [
+        ("testCardSingle", testCardSingle),
+        ("testCardStringEquality", testCardStringEquality)
+    ]
 }
