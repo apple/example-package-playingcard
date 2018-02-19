@@ -20,18 +20,18 @@ public struct PlayingCard {
 
 // MARK: - Equatable
 
-extension PlayingCard: Equatable {}
-
-public func ==(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
-    return lhs.rank == rhs.rank && lhs.suit == rhs.suit
+extension PlayingCard: Equatable {
+    public static func ==(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
+      return lhs.rank == rhs.rank && lhs.suit == rhs.suit
+    }
 }
 
 // MARK: - Comparable
 
-extension PlayingCard: Comparable {}
-
-public func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
-    return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
+extension PlayingCard: Comparable {
+    public static func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
+        return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
+    }
 }
 
 // MARK: - CustomStringConvertible

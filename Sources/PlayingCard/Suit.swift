@@ -14,18 +14,18 @@ public enum Suit: String {
 
 // MARK: - Comparable
 
-extension Suit: Comparable {}
-
-public func <(lhs: Suit, rhs: Suit) -> Bool {
-    switch (lhs, rhs) {
-    case (_, _) where lhs == rhs:
-        return false
-    case (.spades, _),
-    (.hearts, .diamonds), (.hearts, .clubs),
-    (.diamonds, .clubs):
-        return false
-    default:
-        return true
+extension Suit: Comparable {
+    public static func <(lhs: Suit, rhs: Suit) -> Bool {
+        switch (lhs, rhs) {
+        case (_, _) where lhs == rhs:
+            return false
+        case (.spades, _),
+        (.hearts, .diamonds), (.hearts, .clubs),
+        (.diamonds, .clubs):
+            return false
+        default:
+            return true
+        }
     }
 }
 
