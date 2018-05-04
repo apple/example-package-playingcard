@@ -38,6 +38,6 @@ extension PlayingCard: Comparable {
 
 extension PlayingCard : CustomStringConvertible {
     public var description: String {
-        return "\(suit)\(rank)"
+        return "\(suit) \(rank)"
     }
 }
