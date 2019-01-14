@@ -8,7 +8,7 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-public enum Suit: String {
+public enum Suit: String, CaseIterable {
     case spades, hearts, diamonds, clubs
 }
 
