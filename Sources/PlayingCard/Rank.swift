@@ -8,7 +8,7 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-public enum Rank: Int {
+public enum Rank: Int, CaseIterable {
     case two = 2
     case three, four, five, six, seven, eight, nine, ten
     case jack, queen, king, ace
