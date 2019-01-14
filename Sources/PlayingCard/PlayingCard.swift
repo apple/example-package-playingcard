@@ -8,7 +8,7 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-public struct PlayingCard: Equatable {
+public struct PlayingCard: Equatable, Hashable {
     public let rank: Rank
     public let suit: Suit
 
