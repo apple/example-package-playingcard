@@ -28,7 +28,7 @@ extension PlayingCard: Comparable {
 
 // MARK: - CustomStringConvertible
 
-extension PlayingCard : CustomStringConvertible {
+extension PlayingCard: CustomStringConvertible {
     public var description: String {
         return "\(suit) \(rank)"
     }
