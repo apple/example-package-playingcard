@@ -8,7 +8,7 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-public enum Rank : Int {
+public enum Rank: Int {
     case two = 2
     case three, four, five, six, seven, eight, nine, ten
     case jack, queen, king, ace
@@ -16,7 +16,7 @@ public enum Rank : Int {
 
 // MARK: - Comparable
 
-extension Rank : Comparable {
+extension Rank: Comparable {
     public static func <(lhs: Rank, rhs: Rank) -> Bool {
         switch (lhs, rhs) {
         case (_, _) where lhs == rhs:
@@ -31,7 +31,7 @@ extension Rank : Comparable {
 
 // MARK: - CustomStringConvertible
 
-extension Rank : CustomStringConvertible {
+extension Rank: CustomStringConvertible {
     public var description: String {
         switch self {
         case .ace: return "A"

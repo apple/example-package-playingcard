@@ -31,7 +31,7 @@ extension Suit: Comparable {
 
 // MARK: - CustomStringConvertible
 
-extension Suit : CustomStringConvertible {
+extension Suit: CustomStringConvertible {
     public var description: String {
         switch self {
         case .spades: return "♠︎"
