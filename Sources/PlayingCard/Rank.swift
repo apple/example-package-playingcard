@@ -8,6 +8,7 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
+/// An enumeration that defines the rank of a playing card.
 public enum Rank: Int, CaseIterable {
     case two = 2
     case three, four, five, six, seven, eight, nine, ten
@@ -16,6 +17,7 @@ public enum Rank: Int, CaseIterable {
 
 // MARK: - Comparable
 
+/// An extension that allows comparisons between ranks.
 extension Rank: Comparable {
     public static func <(lhs: Rank, rhs: Rank) -> Bool {
         switch (lhs, rhs) {
@@ -31,6 +33,7 @@ extension Rank: Comparable {
 
 // MARK: - CustomStringConvertible
 
+/// An extension that provides a human-readable description of a rank.
 extension Rank: CustomStringConvertible {
     public var description: String {
         switch self {
