@@ -30,9 +30,14 @@ public struct PlayingCard: Equatable, Hashable {
 
 /// An extension that performs comparisons between playing cards.
 extension PlayingCard: Comparable {
-    /// Compares one playing card's rank and suit to another.
+    /// Returns a Boolean value indicating whether the left playing card is less than the right playing card.
     public static func <(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
         return lhs.rank == rhs.rank ? lhs.suit < rhs.suit : lhs.rank < rhs.rank
+    }
+
+    /// Returns a Boolean value indicating whether the left playing card is greater than the right playing card.
+    public static func >(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
+        return lhs.rank == rhs.rank ? lhs.suit > rhs.suit : lhs.rank > rhs.rank
     }
 }
 
