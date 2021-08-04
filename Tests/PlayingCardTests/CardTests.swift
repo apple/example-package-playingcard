@@ -21,9 +21,12 @@ class CardTests: XCTestCase {
         let card5 = PlayingCard(rank: .queen, suit: .clubs)
 
         XCTAssertGreaterThan(card2, card1)
+        XCTAssertLessThan(card1, card2)
         XCTAssertGreaterThan(card3, card2)
+        XCTAssertLessThan(card2, card3)
         XCTAssertEqual(card1, card4)
         XCTAssertGreaterThan(card4, card5)
+        XCTAssertLessThan(card5, card4)
     }
     
     func testCardStringEquality() {
