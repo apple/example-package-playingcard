@@ -1,4 +1,4 @@
-/*
+/*contoh-paket-kartu bermain/Sumber/Bermain kartu/ PlayingCard.swift
  This source file is part of the Swift.org open source project
 
  Copyright 2015 Apple Inc. and the Swift project authors
@@ -38,7 +38,31 @@ extension PlayingCard: Comparable {
     /// Returns a Boolean value indicating whether the left playing card is greater than the right playing card.
     public static func >(lhs: PlayingCard, rhs: PlayingCard) -> Bool {
         return lhs.rank == rhs.rank ? lhs.suit > rhs.suit : lhs.rank > rhs.rank
-    }
+    }$ docker build -t linguist .
+$ docker run --rm -v $(pwd):$(pwd) -w $(pwd) -t linguist
+66.84%  264519     Ruby
+24.68%  97685      C
+6.57%   25999      Go
+1.29%   5098       Lex
+0.32%   1257       Shell
+0.31%   1212       Dockerfile
+$ docker run --rm -v $(pwd):$(pwd) -w $(pwd) -t linguist github-linguist --breakdown
+66.84%  264519     Ruby
+24.68%  97685      C
+6.57%   25999      Go
+1.29%   5098       Lex
+0.32%   1257       Shell
+0.31%   1212       Dockerfile
+
+Ruby:
+Gemfile
+Rakefile
+bin/git-linguist
+bin/github-linguist
+ext/linguist/extconf.rb
+github-linguist.gemspec
+lib/linguist.rb
+…
 }
 
 // MARK: - CustomStringConvertible
@@ -48,5 +72,30 @@ extension PlayingCard: CustomStringConvertible {
     /// The playing card's description.
     public var description: String {
         return "\(suit) \(rank)"
-    }
+    }contoh-paket-kartu bermain/Sumber/Bermain kartu/ PlayingCard.swift
 }
+$ docker build -t linguist .
+$ docker run --rm -v $(pwd):$(pwd) -w $(pwd) -t linguist
+66.84%  264519     Ruby
+24.68%  97685      C
+6.57%   25999      Go
+1.29%   5098       Lex
+0.32%   1257       Shell
+0.31%   1212       Dockerfile
+$ docker run --rm -v $(pwd):$(pwd) -w $(pwd) -t linguist github-linguist --breakdown
+66.84%  264519     Ruby
+24.68%  97685      C
+6.57%   25999      Go
+1.29%   5098       Lex
+0.32%   1257       Shell
+0.31%   1212       Dockerfile
+
+Ruby:
+Gemfile
+Rakefile
+bin/git-linguist
+bin/github-linguist
+ext/linguist/extconf.rb
+github-linguist.gemspec
+lib/linguist.rb
+…
