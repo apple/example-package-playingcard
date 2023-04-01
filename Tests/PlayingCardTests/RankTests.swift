@@ -15,7 +15,7 @@ class RankTests: XCTestCase {
     
     func testRankStringEquality() {
         let numbers = [2,3,4,5,6,7,8,9,10]
-        let suits = numbers.map{Rank(rawValue:$0)}.flatMap{$0}.map{Int(String(describing: $0)) ?? 0}
+        let suits = numbers.map{Rank(rawValue:$0)}.compactMap{$0}.map{Int(String(describing: $0)) ?? 0}
         
         XCTAssertEqual(String(describing: Rank.ace), "A")
         XCTAssertEqual(String(describing: Rank.jack), "J")
